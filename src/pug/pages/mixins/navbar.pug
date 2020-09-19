@@ -3,17 +3,15 @@ mixin navbar(options)
     nav.navbar.navbar-marketing.navbar-expand-lg(class=options.navbarBg, class=options.navbarStyle, class=options.navbarPosition)
         div(class=options.navbarContainer)
             a.navbar-brand(href='index.html', class=options.navbarBrandColor)
-                | SB UI Kit Pro
+                | Think Halcyon
             button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
                 i(data-feather='menu')
             #navbarSupportedContent.collapse.navbar-collapse
                 ul.navbar-nav.ml-auto.mr-lg-5
-                    li.nav-item
-                        a.nav-link(href='index.html')
-                            | Home 
+                    //- About
                     li.nav-item.dropdown.dropdown-xl.no-caret
                         a#navbarDropdownDemos.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                            | Landings
+                            | About
                             i.fas.fa-chevron-right.dropdown-arrow
                         .dropdown-menu.dropdown-menu-right.animated--fade-in-up.mr-lg-n15(aria-labelledby='navbarDropdownDemos')
                             .row.no-gutters
@@ -53,9 +51,10 @@ mixin navbar(options)
                                             a.dropdown-item(href='header-graphic-signup.html') Graphic (Signup)
                                             a.dropdown-item(href='header-inner-page.html') Inner Page
                                             a.dropdown-item(href='header-nav-only.html') Nav Only
+                    //- Services
                     li.nav-item.dropdown.dropdown-lg.no-caret
                         a#navbarDropdownPages.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                            | Pages
+                            | Services
                             i.fas.fa-chevron-right.dropdown-arrow
                         .dropdown-menu.dropdown-menu-right.animated--fade-in-up(aria-labelledby='navbarDropdownPages')
                             .row.no-gutters
@@ -89,9 +88,10 @@ mixin navbar(options)
                                     a.dropdown-item(href='page-portfolio-masonry.html') Masonry
                                     a.dropdown-item(href='page-portfolio-case-study.html') Case Study
                                     a.dropdown-item(href='page-portfolio-project.html') Project
+                    //- Portfolio
                     li.nav-item.dropdown.no-caret
                         a#navbarDropdownDocs.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                            | Documentation
+                            | Portfolio
                             i.fas.fa-chevron-right.dropdown-arrow
                         .dropdown-menu.dropdown-menu-right.animated--fade-in-up(aria-labelledby='navbarDropdownDocs')
                             a.dropdown-item.py-3(href='https://docs.startbootstrap.com/sb-ui-kit-pro/quickstart', target='_blank')
@@ -114,7 +114,8 @@ mixin navbar(options)
                                 div
                                     .small.text-gray-500 Changelog
                                     | Updates and changes
-                                
+
+                //- Contact
                 a(href="https://shop.startbootstrap.com/sb-ui-kit-pro", class=options.navbarBtnColor).btn.rounded-pill.px-4.ml-lg-4
-                    | Buy Now
+                    | Contact
                     i.fas.fa-arrow-right.ml-1
