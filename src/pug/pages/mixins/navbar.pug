@@ -15,21 +15,24 @@ mixin navbar(options)
                             | About
                             i.fas.fa-chevron-right.dropdown-arrow
                         .dropdown-menu.dropdown-menu-right.animated--fade-in-up(aria-labelledby='navbarDropdownDocs')
-                            a.dropdown-item.py-3(href='https://docs.startbootstrap.com/sb-ui-kit-pro/quickstart', target='_blank')
+                            //- About Jo
+                            a.dropdown-item.py-3(href="aboutJo.html")
                                 .icon-stack.bg-primary-soft.text-primary.mr-4
                                     i.fas.fa-book-open
                                 div
                                     .small.text-gray-500 About Jo
                                     | Read more about Jonayah Marie Jackson
                             .dropdown-divider.m-0
-                            a.dropdown-item.py-3(href='https://docs.startbootstrap.com/sb-ui-kit-pro/components', target='_blank')
+                            //- About Think Halcyon
+                            a.dropdown-item.py-3(href="aboutThinkHalcyon.html")
                                 .icon-stack.bg-primary-soft.text-primary.mr-4
                                     i.fas.fa-code
                                 div
                                     .small.text-gray-500 About Think Halcyon
                                     | Learn more about what Think Halcyon does
                             .dropdown-divider.m-0
-                            a.dropdown-item.py-3(href='https://docs.startbootstrap.com/sb-ui-kit-pro/components', target='_blank')
+                            //- FAQs
+                            a.dropdown-item.py-3(href="faq.html")
                                 .icon-stack.bg-primary-soft.text-primary.mr-4
                                     i.fas.fa-question
                                 div
@@ -37,32 +40,34 @@ mixin navbar(options)
                                     | Answers to your questions
                     //- Blog
                     li.nav-item
-                        a.nav-link(href='index.html')
+                        a.nav-link(href="blog.html")
                             | Blog 
                     //- Services
                     li.nav-item
-                        a.nav-link(href='index.html')
+                        a.nav-link(href="services.html")
                             | Services 
                     //- Portfolio
                     li.nav-item.dropdown.no-caret
                         a#navbarDropdownDocs.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                             | Portfolio
                             i.fas.fa-chevron-right.dropdown-arrow
+                        //- Squarespace Portfolio
                         .dropdown-menu.dropdown-menu-right.animated--fade-in-up(aria-labelledby='navbarDropdownDocs')
-                            a.dropdown-item.py-3(href='https://docs.startbootstrap.com/sb-ui-kit-pro/quickstart', target='_blank')
+                            a.dropdown-item.py-3(href="sqsPortfolio.html")
                                 .icon-stack.bg-primary-soft.text-primary.mr-4
                                     i.fas.fa-book-open
                                 div
                                     .small.text-gray-500 Squarespace Websites
                                     | Websites built using Squarespace 7.1
                             .dropdown-divider.m-0
-                            a.dropdown-item.py-3(href='https://docs.startbootstrap.com/sb-ui-kit-pro/components', target='_blank')
+                            //- Custom Portfolio
+                            a.dropdown-item.py-3(href="customPortfolio.html")
                                 .icon-stack.bg-primary-soft.text-primary.mr-4
                                     i.fas.fa-code
                                 div
                                     .small.text-gray-500 Custom Websites
                                     | Websites using the MERN stack              
                 //- Contact
-                a(href="https://shop.startbootstrap.com/sb-ui-kit-pro", class=options.navbarBtnColor).btn.rounded-pill.px-4.ml-lg-4
+                a(href="contact.html", class=options.navbarBtnColor).btn.rounded-pill.px-4.ml-lg-4
                     | Contact
                     i.fas.fa-arrow-right.ml-1
