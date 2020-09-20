@@ -14,13 +14,13 @@
     },
     "description": "Think Halcyon, LLC website",
     "keywords": [
-        "css",
-        "sass",
-        "html",
+        "think",
+        "halcyon",
+        "website",
         "responsive",
-        "theme",
-        "template",
-        "ui"
+        "develop",
+        "create",
+        "beautiful"
     ],
     "homepage": "https://thinkhalcyon.com/",
     "bugs": {
@@ -47,7 +47,7 @@
         "prettier": "1.19.1",
         "pug": "2.0.4",
         "sass": "1.25.0",
-        "shelljs": "0.8.3",
+        "shelljs": "^0.8.3",
         "upath": "1.2.0"
     }
 }
