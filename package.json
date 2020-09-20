@@ -36,7 +36,9 @@
         "url": "https://github.com/StartBootstrap/sb-ui-kit-pro.git"
     },
     "dependencies": {
-        "bootstrap": "4.4.1",
+        "bootstrap": "4.4.1"
+    },
+    "devDependencies": {
         "autoprefixer": "9.7.4",
         "browser-sync": "2.26.7",
         "chokidar": "3.3.1",
@@ -47,8 +49,5 @@
         "sass": "1.25.0",
         "shelljs": "0.8.3",
         "upath": "1.2.0"
-    },
-    "devDependencies": {
- 
     }
 }
