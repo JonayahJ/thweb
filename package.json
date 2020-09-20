@@ -1,6 +1,6 @@
 {
-    "title": "SB UI Kit Pro",
-    "name": "sb-ui-kit-pro",
+    "title": "Think Halcyon",
+    "name": "Think Halcyon",
     "version": "1.0.2",
     "scripts": {
         "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
@@ -12,7 +12,7 @@
         "start": "npm run build && node scripts/start.js",
         "start:debug": "npm run build && node scripts/start-debug.js"
     },
-    "description": "A premium admin dashboard theme based on Bootstrap 4, created by Start Bootstrap.",
+    "description": "Think Halcyon, LLC website",
     "keywords": [
         "css",
         "sass",
@@ -24,16 +24,16 @@
     ],
     "homepage": "https://shop.startbootstrap.com/product/sb-ui-kit-pro",
     "bugs": {
-        "email": "feedback@startbootstrap.com"
+        "email": "jonayah@thinkhalcyon.com"
     },
     "license": "SEE_LICENSE",
     "author": "Start Bootstrap",
     "contributors": [
-        "David Miller (http://davidmiller.io/)"
+        "Jonayah Marie Jackson (http://jonayah.dev/)"
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/StartBootstrap/sb-ui-kit-pro.git"
+        "url": "https://github.com/JonayahJ/thweb"
     },
     "dependencies": {
         "bootstrap": "4.4.1"
