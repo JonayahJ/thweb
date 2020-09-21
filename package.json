@@ -37,8 +37,10 @@
     },
     "dependencies": {
         "bootstrap": "4.4.1",
+        "ejs": "^3.1.5",
         "express": "^4.17.1",
         "http-proxy": "^1.18.1",
+        "mongoose": "^5.10.6",
         "yargs-parser": "^20.2.0"
     },
     "devDependencies": {
