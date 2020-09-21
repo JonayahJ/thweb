@@ -1,7 +1,7 @@
 /*!
-    * Start Bootstrap - Think Halcyon v1.0.2 (https://thinkhalcyon.com/)
+    * Start Bootstrap - SB UI Kit Pro v1.0.2 (https://shop.startbootstrap.com/product/sb-ui-kit-pro)
     * Copyright 2013-2020 Start Bootstrap
-    * Licensed under SEE_LICENSE (https://github.com/JonayahJ/think-halcyon)
+    * Licensed under SEE_LICENSE (https://github.com/JonayahJ/sb-ui-kit-pro)
     */
     (function($) {
     "use strict";
