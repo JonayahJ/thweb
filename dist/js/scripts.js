@@ -1,6 +1,6 @@
 /*!
     * Start Bootstrap - Think Halcyon v1.0.2 (https://thinkhalcyon.com/)
-    * Copyright 2013-2020 Start Bootstrap
+    * Copyright 2013-2020 Jonayah Marie Jackson (http://jonayah.dev/)
     * Licensed under SEE_LICENSE (https://github.com/JonayahJ/think-halcyon)
     */
     (function($) {
@@ -61,5 +61,12 @@
     navbarCollapse();
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
+
+    // Submit forms
+    // const contactUs = document.getElementById("contactUs")
+    // contactUs.addEventListener("submit", (e) => {
+    //     e.preventDefault();
+
+    // });
 
 })(jQuery);

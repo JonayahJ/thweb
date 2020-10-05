@@ -57,4 +57,11 @@
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
 
+    // Submit forms
+    // const contactUs = document.getElementById("contactUs")
+    // contactUs.addEventListener("submit", (e) => {
+    //     e.preventDefault();
+
+    // });
+
 })(jQuery);
