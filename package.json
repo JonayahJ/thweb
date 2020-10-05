@@ -3,7 +3,7 @@
     "name": "think-halcyon",
     "version": "1.0.2",
     "scripts": {
-        "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets", 
+        "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
         "build:assets": "node scripts/build-assets.js",
         "build:pug": "node scripts/build-pug.js",
         "build:scripts": "node scripts/build-scripts.js",
@@ -40,6 +40,7 @@
         "http-proxy": "^1.18.1",
         "mongoose": "^5.10.7",
         "morgan": "^1.10.0",
+        "node-forge": "^0.10.0",
         "yargs-parser": "^20.2.0"
     },
     "devDependencies": {
