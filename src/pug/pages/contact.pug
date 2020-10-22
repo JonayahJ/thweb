@@ -62,7 +62,7 @@ block content
                     h2 Leave us a message!
                     p.lead.mb-5 We'll get back to you as soon as possible.
 
-            form#contactUs
+            form#contactUs(name="contact us form" method="POST" netlify data-netlify="true")
                 .form-row
                     .form-group.col-md-6
                         label.text-dark(for='inputName') Full name
