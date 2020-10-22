@@ -39,8 +39,8 @@ block content
             .container.text-center
                 .row.justify-content-center
                     .col-lg-8
-                        h1.page-header-title.mb-3 Services
-                        p.page-header-text Options, pricing, maintenance, and other details
+                        h1.page-header-title.mb-3 Pricing
+                        p.page-header-text Options, starting rates, maintenance, and other details
 
     //- * * * * * * * * * * * *
     //- * * Pricing Section * *
@@ -58,23 +58,24 @@ block content
 
         .container
             .text-center.mb-5
-                h2 Simple Pricing
-                p.lead Easy pricing means no suprises.
+                h2 Web Development Rates
+                p.lead Starting prices
             .row
                 .col-lg-4.mb-5.mb-lg-0
                     .card.pricing.h-100
                         .card-body.p-5
                             .text-center
-                                .badge.badge-light.badge-pill.badge-marketing.badge-sm Free
+                                .badge.badge-light.badge-pill.badge-marketing.badge-sm SQS
                                 .pricing-price
                                     sup $
-                                    | 0
-                                    span.pricing-price-period /mo
+                                    | 300
+                                    <br />
+                                    //- span.pricing-price-period /mo
                             ul.fa-ul.pricing-list
                                 li.pricing-list-item
                                     span.fa-li
                                         i.far.fa-check-circle.text-teal
-                                    span.text-dark 1 user
+                                    span.text-dark Up to 5 static pages
                                 li.pricing-list-item
                                     span.fa-li
                                         i.far.fa-check-circle.text-teal
@@ -103,16 +104,17 @@ block content
                     .card.pricing.h-100
                         .card-body.p-5
                             .text-center
-                                .badge.badge-primary-soft.badge-pill.badge-marketing.badge-sm.text-primary Standard
+                                .badge.badge-primary-soft.badge-pill.badge-marketing.badge-sm.text-primary Custom
                                 .pricing-price
                                     sup $
-                                    | 19
-                                    span.pricing-price-period /mo
+                                    | 400
+                                    <br />
+                                    //- span.pricing-price-period /mo
                             ul.fa-ul.pricing-list
                                 li.pricing-list-item
                                     span.fa-li
                                         i.far.fa-check-circle.text-teal
-                                    span.text-dark Up to 15 users
+                                    span.text-dark Up to 10 pages
                                 li.pricing-list-item
                                     span.fa-li
                                         i.far.fa-check-circle.text-teal
@@ -141,16 +143,49 @@ block content
                     .card.pricing.h-100
                         .card-body.p-5
                             .text-center
-                                .badge.badge-light.badge-pill.badge-marketing.badge-sm Enterprise
-                                p.card-text.py-10 We offer discounts for larger organizations. Contact us to inquire about enterprise level plans!
+                                .badge.badge-light.badge-pill.badge-marketing.badge-sm eCommerce
+                                .pricing-price
+                                    sup $
+                                    | 500
+                                    <br />
+                                    //- span.pricing-price-period /mo
+                            ul.fa-ul.pricing-list
+                                li.pricing-list-item
+                                    span.fa-li
+                                        i.far.fa-check-circle.text-teal
+                                    span.text-dark Up to 10 pages
+                                li.pricing-list-item
+                                    span.fa-li
+                                        i.far.fa-check-circle.text-teal
+                                    span.text-dark Email and live chat support
+                                li.pricing-list-item
+                                    span.fa-li
+                                        i.far.fa-check-circle.text-teal
+                                    span.text-dark Style customizer
+                                li.pricing-list-item
+                                    span.fa-li
+                                        i.far.fa-check-circle.text-teal
+                                    span.text-dark Custom components
+                                li.pricing-list-item
+                                    span.fa-li
+                                        i.far.fa-check-circle.text-teal
+                                    span.text-dark Expanded utilities
+                                li.pricing-list-item
+                                    span.fa-li
+                                        i.far.fa-check-circle.text-teal
+                                    span.text-dark Third-party integration
+                                li.pricing-list-item
+                                    span.fa-li
+                                        i.far.fa-check-circle.text-teal
+                                    span.text-dark Layout options
 
             .mt-5.text-center
-                a.btn.btn-primary.btn-marketing.rounded-pill(href='#!') Get Started
+                a.btn.btn-primary.btn-marketing.rounded-pill(href="scheduler.html") Get Started
 
     hr.my-0
 
     //- * * * * * * * * * * * * * *
-    //- * * Pricing Section Two * *
+    //- * * * Web Maintenance * * *
     //- * * * * * * * * * * * * * *
 
     include mixins/section.pug
@@ -165,8 +200,8 @@ block content
 
         .container
             .text-center.mb-5
-                h2 One plan, no hassle
-                p.lead Easy pricing means no suprises.
+                h2 Website Maintenance
+                p.lead Providing monthly website support for existing clients
             .row.no-gutters.align-items-center
                 .col-lg-6.mb-5.mb-lg-0
                     .card.pricing
@@ -174,13 +209,13 @@ block content
                             .badge.badge-primary-soft.badge-pill.badge-marketing.badge-sm.text-primary Standard
                             .pricing-price
                                 sup $
-                                | 19
+                                | 50
                                 span.pricing-price-period /mo
                             ul.fa-ul.pricing-list
                                 li.pricing-list-item
                                     span.fa-li
                                         i.far.fa-check-circle.text-teal
-                                    span.text-dark Up to 15 users
+                                    span.text-dark Up to 5 hours
                                 li.pricing-list-item
                                     span.fa-li
                                         i.far.fa-check-circle.text-teal
@@ -188,11 +223,11 @@ block content
                                 li.pricing-list-item
                                     span.fa-li
                                         i.far.fa-check-circle.text-teal
-                                    span.text-dark Style customizer
+                                    span.text-dark Blog and calendar updates
                                 li.pricing-list-item
                                     span.fa-li
                                         i.far.fa-check-circle.text-teal
-                                    span.text-dark Custom components
+                                    span.text-dark Website troubleshooting
                                 li.pricing-list-item
                                     span.fa-li
                                         i.far.fa-check-circle.text-teal
@@ -221,144 +256,6 @@ block content
 
     hr.my-0
 
-    //- * * * * * * * * * * * * * * *
-    //- * * Pricing Section Three * *
-    //- * * * * * * * * * * * * * * *
-
-    include mixins/section.pug
-    +section({
-        sectionBg: 'bg-light',
-        sectionPadding: 'py-10',
-        svgBorderAngled: false,
-        svgBorderRounded: false,
-        svgBorderWaves: false,
-        svgBorderFill: ''
-    })
-
-        .container
-            .text-center.mb-5
-                h2 Simple Pricing
-                p.lead Easy pricing means no suprises.
-            .row.no-gutters.align-items-center
-                .col-lg-4.mb-5.mb-lg-0
-                    .card.pricing.pricing-left
-                        .card-body.p-5
-                            .text-center
-                                .badge.badge-light.badge-pill.badge-marketing.badge-sm Free
-                                .pricing-price
-                                    sup $
-                                    | 0
-                                    span.pricing-price-period /mo
-                            ul.fa-ul.pricing-list
-                                li.pricing-list-item
-                                    span.fa-li
-                                        i.far.fa-check-circle.text-teal
-                                    span.text-dark 1 user
-                                li.pricing-list-item
-                                    span.fa-li
-                                        i.far.fa-check-circle.text-teal
-                                    span.text-dark Community support
-                                li.pricing-list-item
-                                    span.fa-li
-                                        i.far.fa-circle.text-gray-200
-                                    | Style customizer
-                                li.pricing-list-item
-                                    span.fa-li
-                                        i.far.fa-circle.text-gray-200
-                                    | Custom components
-                                li.pricing-list-item
-                                    span.fa-li
-                                        i.far.fa-circle.text-gray-200
-                                    | Expanded utilities
-                                li.pricing-list-item
-                                    span.fa-li
-                                        i.far.fa-circle.text-gray-200
-                                    | Third-party integration
-                                li.pricing-list-item
-                                    span.fa-li
-                                        i.far.fa-circle.text-gray-200
-                                    | Layout options
-                .col-lg-4.mb-5.mb-lg-0
-                    .card.pricing.py-4.z-1
-                        .card-body.p-5
-                            .text-center
-                                .badge.badge-primary-soft.badge-pill.badge-marketing.badge-sm.text-primary Standard
-                                .pricing-price
-                                    sup $
-                                    | 19
-                                    span.pricing-price-period /mo
-                            ul.fa-ul.pricing-list
-                                li.pricing-list-item
-                                    span.fa-li
-                                        i.far.fa-check-circle.text-teal
-                                    span.text-dark Up to 15 users
-                                li.pricing-list-item
-                                    span.fa-li
-                                        i.far.fa-check-circle.text-teal
-                                    span.text-dark Email and live chat support
-                                li.pricing-list-item
-                                    span.fa-li
-                                        i.far.fa-check-circle.text-teal
-                                    span.text-dark Style customizer
-                                li.pricing-list-item
-                                    span.fa-li
-                                        i.far.fa-check-circle.text-teal
-                                    span.text-dark Custom components
-                                li.pricing-list-item
-                                    span.fa-li
-                                        i.far.fa-circle.text-gray-200
-                                    | Expanded utilities
-                                li.pricing-list-item
-                                    span.fa-li
-                                        i.far.fa-circle.text-gray-200
-                                    | Third-party integration
-                                li.pricing-list-item
-                                    span.fa-li
-                                        i.far.fa-circle.text-gray-200
-                                    | Layout options
-                .col-lg-4.mb-5.mb-lg-0
-                    .card.pricing.pricing-right
-                        .card-body.p-5
-                            .text-center
-                                .badge.badge-secondary-soft.badge-pill.badge-marketing.badge-sm.text-secondary Premium
-                                .pricing-price
-                                    sup $
-                                    | 29
-                                    span.pricing-price-period /mo
-                            ul.fa-ul.pricing-list
-                                li.pricing-list-item
-                                    span.fa-li
-                                        i.far.fa-check-circle.text-teal
-                                    span.text-dark Unlimited users
-                                li.pricing-list-item
-                                    span.fa-li
-                                        i.far.fa-check-circle.text-teal
-                                    span.text-dark Email and live chat support
-                                li.pricing-list-item
-                                    span.fa-li
-                                        i.far.fa-check-circle.text-teal
-                                    span.text-dark Style customizer
-                                li.pricing-list-item
-                                    span.fa-li
-                                        i.far.fa-check-circle.text-teal
-                                    span.text-dark Custom components
-                                li.pricing-list-item
-                                    span.fa-li
-                                        i.far.fa-check-circle.text-teal
-                                    span.text-dark Expanded utilities
-                                li.pricing-list-item
-                                    span.fa-li
-                                        i.far.fa-check-circle.text-teal
-                                    span.text-dark Third-party integration
-                                li.pricing-list-item
-                                    span.fa-li
-                                        i.far.fa-check-circle.text-teal
-                                    span.text-dark Layout options
-
-            .mt-5.text-center
-                a.btn.btn-primary.btn-marketing.rounded-pill(href='#!') Get Started
-
-    hr.my-0
 
     //- * * * * * * * * * * * *
     //- * * Company Section * *
@@ -378,10 +275,10 @@ block content
             .row.align-items-center.mb-10
                 .col-lg-6
                     .h4.font-weight-normal Ready to get started?
-                    p.lead.mb-0.text-gray-500 Get in touch or create an account.
+                    p.lead.mb-0.text-gray-500 Get in touch or schedule a free consultation.
                 .col-lg-6.text-lg-right
-                    a.btn.btn-primary.btn-marketing.rounded-pill.mr-3.my-2.lift.lift-sm(href='#!') Contact Sales
-                    a.btn.btn-white.btn-marketing.rounded-pill.my-2.lift.lift-sm(href='#!') Create Account
+                    a.btn.btn-primary.btn-marketing.rounded-pill.mr-3.my-2.lift.lift-sm(href="contact.html") Contact Us
+                    a.btn.btn-white.btn-marketing.rounded-pill.my-2.lift.lift-sm(href="scheduler.html") Consultation
 
             .row
                 .col-lg-6.z-1.mb-5.mb-lg-n5
