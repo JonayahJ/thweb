@@ -3,7 +3,7 @@ extends ../layouts/default.pug
 block config
 
     //- Global Page Configuration
-    - var pageTitle = 'About'
+    - var pageTitle = 'About Jo'
 
 block content
 
@@ -27,7 +27,8 @@ block content
 
     include mixins/header.pug
     +header({
-        pageHeaderBg: 'bg-gradient-primary-to-secondary',
+        pageHeaderBg: 'bg-img-cover overlay overlay-60',
+        pageHeaderBgImg: 'background-image: url(assets/img/AboutJo.jpg);',
         pageHeaderStyle: 'page-header-dark',
         svgBorderAngled: false,
         svgBorderRounded: true,
