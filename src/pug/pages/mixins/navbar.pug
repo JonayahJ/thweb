@@ -3,8 +3,10 @@ mixin navbar(options)
     nav.navbar.navbar-marketing.navbar-expand-lg(class=options.navbarBg, class=options.navbarStyle, class=options.navbarPosition)
         div(class=options.navbarContainer)
             a.navbar-brand(href='index.html', class=options.navbarBrandColor)
-                | Think Halcyon
-                //- Insert logo
+                //- Logo
+                img(src="assets/img/ThinkHalcyonLogo_White.svg")
+                //- if navbar color is dark, display white logo
+                //- if navbar color is light, display black logo
             button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
                 i(data-feather='menu')
             #navbarSupportedContent.collapse.navbar-collapse
