@@ -13,12 +13,12 @@ block content
 
     include mixins/navbar.pug
     +navbar({
-        navbarBg: 'bg-white',
-        navbarStyle: 'navbar-light',
-        navbarBrandColor: 'text-primary',
-        navbarBtnColor: 'btn-primary',
+        navbarBg: 'bg-transparent',
+        navbarStyle: 'navbar-dark',
+        navbarBrandColor: 'text-white',
+        navbarBtnColor: 'btn-teal',
         navbarContainer: 'container',
-        navbarPosition: ''
+        navbarPosition: 'fixed-top'
     })
 
     //- * * * * * * * * * *
@@ -28,7 +28,7 @@ block content
     include mixins/header.pug
     +header({
         pageHeaderBg: 'bg-img-cover py-15',
-        pageHeaderBgImg: 'background-image: url("https://source.unsplash.com/RKwaj2g6OOU/1500x900")',
+        pageHeaderBgImg: 'background-image: url("assets/img/screenshots/EAscreenshot.png")',
         pageHeaderStyle: 'page-header-dark',
         svgBorderAngled: false,
         svgBorderRounded: true,
@@ -55,53 +55,64 @@ block content
         .container
             .row.justify-content-center
                 .col-lg-8
-                    h1 Curology
-                    p.lead A case study focused on building brand standards and creating effective advertising campaigns
+                    h1 Earthworks Acupuncture
+                    p.lead An advocate for transforming alternative healthcare to become affordable and accesible for all.
+                    a.btn.btn-teal.btn-marketing.rounded-pill.lift.lift-sm(href="https://www.earthworksacu.org" target="_blank" rel="noopener noreferrer") Live Preview
                     hr
-                    p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti quis voluptas amet accusamus temporibus corporis quia asperiores magni laudantium dolore iusto, adipisci rem id ratione repellat! Fuga esse molestias accusamus!
-                    p.mb-0 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet error pariatur voluptatibus consequuntur natus unde porro, soluta quisquam facere, deserunt repellat iusto odit labore doloremque velit qui mollitia quo numquam.
+                    p Founder and CEO, Joy Rosa, was in need a website redesign for her acupuncture business that left a lasting impression on her clients and the communities that she serves. Joy needed a central hub for her services, a place to house all of her blog posts, a site to sell her wares, and an advertising machine to show off her videos and reach new clients.  We worked hand in hand with Joy to meet her needs and create a beautiful, yet functional website that she could be proud to show her friends, family, and clients.
+                
+                //- Main Image
                 .col-lg-10
-                    img.img-fluid.rounded-lg.shadow.my-5(src='https://source.unsplash.com/DGH1u80sZik/1200x900')
+                    img.img-fluid.rounded-lg.shadow.my-5(src='assets/img/portfolio-images/EA/Earthworks-54.jpg')
+                
+                //- Second Section
                 .col-lg-8
-                    h4 Building Brand Awareness
-                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit a, iusto ratione minus labore illum sequi optio recusandae perferendis, et beatae corrupti! Nemo aut inventore maxime eligendi optio cupiditate et.
-                    p.pb-5 Lorem ipsum dolor sit amet consectetur adipisicing elit. A eius cupiditate similique officia aperiam adipisci reprehenderit veniam voluptate eum fugit voluptatem, aspernatur minus dolorum nemo impedit odit sit odio consectetur!
+                    h4 Meeting Joy's Needs
+                    p From our consultation, we knew that Joy previously had an old WordPress website that she wanted to redesign. Looking to try something new and easily accesible for her to make changes, we decided to switch to Squarespace and create a new visually pleasing website there.
+                    p.pb-5 The website that Joy had in mind had several must have features, as well as some added flare.  She needed: a store, a blog, pages to share community resources, dedicated services pages, social media integration, embedded YouTube videos, and photos from her last photo shoot.
                 .col-lg-10
                     .card-columns.card-columns-case-study.mb-5
                         .card
-                            img.img-fluid.rounded-lg(src='https://source.unsplash.com/ZIihTgf5uGg/800x700')
+                            img.img-fluid.rounded-lg(src='assets/img/portfolio-images/EA/EA-item.jpg')
                         .card
-                            img.img-fluid.rounded-lg(src='https://source.unsplash.com/Eu_jPNRNub8/800x900')
+                            img.img-fluid.rounded-lg(src='assets/img/portfolio-images/EA/Herbal-Consultations-Thumbnail.jpg')
                         .card
-                            img.img-fluid.rounded-lg(src='https://source.unsplash.com/VItxz6u036U/800x900')
+                            img.img-fluid.rounded-lg(src='assets/img/portfolio-images/EA/Benefits-of-Qi-Gong-Thumbnail.jpg')
                         .card
-                            img.img-fluid.rounded-lg(src='https://source.unsplash.com/E_dRKdBhxk4/800x700')
+                            img.img-fluid.rounded-lg(src='assets/img/portfolio-images/EA/Earthworks-50.jpg')
+                
+                //- Testimonial
                 .col-lg-8
                     .card.bg-primary-soft.text-primary.text-center.mb-5
                         .card-body
-                            p.card-text.lead "Working with this agency helped us boost sales and raise brand awareness across all of our product lines."
+                            p.card-text.lead "I LOVE the new website! Jo really heard my vision and made it happen and then went above and beyond!"
+                    
+                    //- Third Section
                     h4 Benchmarks &amp; Performance Metrics
-                    p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa provident hic quaerat. Accusamus quidem quos fugit a aspernatur, magni obcaecati tenetur similique eaque, sequi id alias veritatis eius, maiores animi.
-                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. A neque ut reiciendis suscipit animi quaerat, est, repellat unde distinctio hic sapiente asperiores perspiciatis id! Quasi eveniet cupiditate quisquam. Itaque, esse.
-                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nobis odio modi optio sapiente neque saepe, facere culpa, doloribus voluptatem nemo quam, cumque fugiat qui excepturi. Nostrum, error. Impedit, quis!
+                    p After our planning meetings and the finalized content, we had our marching orders for building Joy the website she's always wanted for Earthworks Acupuncture. With her wishes in mind, we decided to focus on five key areas for her website redesign:
+                
                     ul.fa-ul
                         li.mb-3
                             span.fa-li
                             i.fas.fa-check.mr-2.text-green
-                            | Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            | A working eCommerce site to sell apparel and herbal remedies
                         li.mb-3
                             span.fa-li
                             i.fas.fa-check.mr-2.text-green
-                            | Quidem dicta iste maiores eligendi numquam nam voluptas quia nisi consequatur illo neque sunt error doloremque vel.
+                            | An educational blog that was easy to maintain and update
                         li.mb-3
                             span.fa-li
                             i.fas.fa-check.mr-2.text-green
-                            | Animi aliquam dolores suscipit saepe ratione corrupti veniam.
-                        li
+                            | Helpful community resource pages to share much needed health and wellness information  
+                        li.mb-3
                             span.fa-li
                             i.fas.fa-check.mr-2.text-green
-                            | Molestiae minima aliquam consequatur eius ab dignissimos at maxime odit culpa excepturi vero magnam vitae ipsa! Ducimus.
-
+                            | A central location to find all of her online content (social media, newsletters, YouTube videos)
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            | A beautiful representation of her work with the community
+                    p And we think it came out rather well!
                     hr.my-5
 
                     .text-center
