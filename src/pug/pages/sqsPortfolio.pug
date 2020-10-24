@@ -13,12 +13,12 @@ block content
 
     include mixins/navbar.pug
     +navbar({
-        navbarBg: 'bg-white',
-        navbarStyle: 'navbar-light',
-        navbarBrandColor: 'text-dark',
+        navbarBg: 'bg-transparent',
+        navbarStyle: 'navbar-dark',
+        navbarBrandColor: 'text-white',
         navbarBtnColor: 'btn-teal',
         navbarContainer: 'container',
-        navbarPosition: ''
+        navbarPosition: 'fixed-top'
     })
 
     //- * * * * * * * * * *
@@ -58,34 +58,40 @@ block content
 
         .container
             .row
-                .col-md-6.col-xl-4.mb-5.mt-n5
-                    a.card.card-portfolio.h-100(href='#!')
-                        img.card-img-top(src='https://source.unsplash.com/jWQj5Wjepuk/700x500', alt='...')
+                //- Anahsa
+                .col-md-6.col-xl-4.mb-5.mt-n5 
+                    a.card.card-portfolio.h-100(href='anahsaCaseStudy.html')
+                        img.card-img-top(src='assets/img/screenshots/AnahsaScreenshot.png', alt='Anahsa, LLC Homepage Screenshot')
                         .card-body
                             .card-title Anahsa, LLC
+                //- Kendra
                 .col-md-6.col-xl-4.mb-5.mt-md-n5
-                    a.card.card-portfolio.h-100(href='#!')
-                        img.card-img-top(src='https://source.unsplash.com/Ecnx13MEPK0/700x500', alt='...')
+                    a.card.card-portfolio.h-100(href='kendraCaseStudy.html')
+                        img.card-img-top(src='assets/img/screenshots/KSscreenshot.png', alt='Kendra Sims Homepage Screenshot')
                         .card-body
                             .card-title Kendra D. Sims
+                //- EA
                 .col-md-6.col-xl-4.mb-5.mt-xl-n5
-                    a.card.card-portfolio.h-100(href='#!')
-                        img.card-img-top(src='https://source.unsplash.com/eUCy1jb_B7I/700x500', alt='...')
+                    a.card.card-portfolio.h-100(href='eaCaseStudy.html')
+                        img.card-img-top(src='assets/img/screenshots/EAscreenshot.png', alt='Earthworks Acupuncture Homepage Screenshot')
                         .card-body
                             .card-title Earthworks Acupuncture
+                //- Yego Coffee
                 .col-md-6.col-xl-4.mb-5
-                    a.card.card-portfolio.h-100(href='#!')
-                        img.card-img-top(src='https://source.unsplash.com/cuTcfqsES6o/700x500', alt='...')
+                    a.card.card-portfolio.h-100(href='yegoCoffeeCaseStudy.html')
+                        img.card-img-top(src='assets/img/screenshots/YCscreenshot.png', alt='Yego Coffee Homepage Screenshot')
                         .card-body
                             .card-title Yego Coffee
+                //- Impexcor Coffee
                 .col-md-6.col-xl-4.mb-5
-                    a.card.card-portfolio.h-100(href='#!')
-                        img.card-img-top(src='https://source.unsplash.com/jipR1oTCO7U/700x500', alt='...')
+                    a.card.card-portfolio.h-100(href='impexcorCaseStudy.html')
+                        img.card-img-top(src='assets/img/screenshots/ICscreenshot.png', alt='Impexcor Coffee Homepage Screenshot')
                         .card-body
                             .card-title Impexcor Coffee
+                //- Elliott Educational Services
                 .col-md-6.col-xl-4.mb-5
-                    a.card.card-portfolio.h-100(href='#!')
-                        img.card-img-top(src='https://source.unsplash.com/n3sqjJzZiBM/700x500', alt='...')
+                    a.card.card-portfolio.h-100(href='cHECaseStudy.html')
+                        img.card-img-top(src='assets/img/screenshots/EAscreenshot.png', alt='PLACEHOLDER!!!!!!')
                         .card-body
                             .card-title Elliott Educational Services
 
