@@ -62,17 +62,17 @@ block content
                     h2 Leave us a message!
                     p.lead.mb-5 We'll get back to you as soon as possible.
 
-            form#contactUs(name="contact us form" method="POST" netlify data-netlify="true")
+            form(name="contact us form" method="POST" netlify data-netlify="true")
                 .form-row
                     .form-group.col-md-6
                         label.text-dark(for='inputName') Full name
-                        input#inputName.form-control.py-4(type='text', placeholder='Full name')
+                        input#inputName.form-control.py-4(type='text', placeholder='Full name', name="Name")
                     .form-group.col-md-6
                         label.text-dark(for='inputEmail') Email
-                        input#inputEmail.form-control.py-4(type='email', placeholder='name@example.com')
+                        input#inputEmail.form-control.py-4(type='email', placeholder='name@example.com', name="Email")
                 .form-group
                     label.text-dark(for='inputMessage') Message
-                    textarea#inputMessage.form-control.py-3(type='text', placeholder='Enter your message...', rows='4')
+                    textarea#inputMessage.form-control.py-3(type='text', placeholder='Enter your message...', rows='4', name="Message")
                 .text-center
                     button.btn.btn-primary.btn-marketing.mt-4(type='submit') Submit Request
 
