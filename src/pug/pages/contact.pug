@@ -5,6 +5,9 @@ block config
     //- Global Page Configuration
     - var pageTitle = 'Contact'
 
+append css
+    link(rel='stylesheet', href='https://unpkg.com/aos@next/dist/aos.css')
+
 block content
 
     //- * * * * * * * *
@@ -39,11 +42,11 @@ block content
             .container.text-center
                 .row.justify-content-center
                     .col-lg-8
-                        h1.page-header-title.mb-3 Contact Us
-                        p.page-header-text Have questions? We're here to help!
+                        h1.page-header-title.mb-3 Contact Jo
+                        p.page-header-text Send me a message using the form below and I'll get back to you shortly.
 
     //- * * * * * * * * * * *
-    //- * * Text Section  * *
+    //- * * Features Grid * *
     //- * * * * * * * * * * *
 
     include mixins/section.pug
@@ -56,12 +59,6 @@ block content
         svgBorderFill: 'text-dark'
     })
 
-        .container
-            .row.justify-content-center
-                .col-lg-8.text-center
-                    h2 Leave us a message!
-                    p.lead.mb-5 We'll get back to you as soon as possible.
-        
         .container
             form(name="contact us form" method="POST" netlify data-netlify="true")
                 .form-row
@@ -77,6 +74,8 @@ block content
                 .text-center
                     button.btn.btn-primary.btn-marketing.mt-4(type='submit') Submit
 
+
+
 block footer
 
     include mixins/footer.pug
@@ -84,3 +83,12 @@ block footer
         footerBg: 'bg-dark',
         footerStyle: 'footer-dark'
     })
+
+append scripts
+    script(src='https://unpkg.com/aos@next/dist/aos.js')
+    script.
+        AOS.init({
+            disable: 'mobile',
+            duration: 600,
+            once: true
+        });
