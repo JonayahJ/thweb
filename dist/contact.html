@@ -8,6 +8,7 @@
         <meta name="author" content="Jonayah Marie Jackson, Think Halcyon" />
         <title>Contact - Think Halcyon</title>
         <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="icon" type="image/x-icon" href="assets/img/Think-Halcyon-Favicon.png" />
         <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.24.1/feather.min.js" crossorigin="anonymous"></script>
@@ -18,7 +19,7 @@
                 <main>
                     <nav class="navbar navbar-marketing navbar-expand-lg bg-transparent navbar-dark fixed-top">
                         <div class="container">
-                            <a class="navbar-brand text-white" href="index.html"><img src="assets/img/ThinkHalcyonLogo_White.svg"/></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i data-feather="menu"></i></button>
+                            <a class="navbar-brand text-white" href="index.html"><img src="assets/img/ThinkHalcyonLogo_White.svg" alt="Think Halcyon logo"/></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i data-feather="menu"></i></button>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav ml-auto mr-lg-5">
                                     <li class="nav-item dropdown no-caret">
@@ -81,8 +82,8 @@
                             <div class="container text-center">
                                 <div class="row justify-content-center">
                                     <div class="col-lg-8">
-                                        <h1 class="page-header-title mb-3">Contact Us</h1>
-                                        <p class="page-header-text">Have questions? We're here to help!</p>
+                                        <h1 class="page-header-title mb-3">Contact Jo</h1>
+                                        <p class="page-header-text">Send me a message using the form below and I'll get back to you shortly.</p>
                                     </div>
                                 </div>
                             </div>
@@ -93,19 +94,13 @@
                     </header>
                     <section class="bg-light py-10">
                         <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8 text-center">
-                                    <h2>Leave us a message!</h2>
-                                    <p class="lead mb-5">We'll get back to you as soon as possible.</p>
-                                </div>
-                            </div>
-                            <form id="contactUs" name="contact us form" method="POST" netlify data-netlify="true">
+                            <form name="contact us form" method="POST" netlify data-netlify="true">
                                 <div class="form-row">
-                                    <div class="form-group col-md-6"><label class="text-dark" for="inputName">Full name</label><input class="form-control py-4" id="inputName" type="text" placeholder="Full name" /></div>
-                                    <div class="form-group col-md-6"><label class="text-dark" for="inputEmail">Email</label><input class="form-control py-4" id="inputEmail" type="email" placeholder="name@example.com" /></div>
+                                    <div class="form-group col-md-6"><label class="text-dark" for="inputName" name="Name">Full name</label><input class="form-control py-4" id="inputName" type="text" placeholder="Full name" name="name" /></div>
+                                    <div class="form-group col-md-6"><label class="text-dark" for="inputEmail" name="Email">Email</label><input class="form-control py-4" id="inputEmail" type="email" placeholder="name@example.com" name="email" /></div>
                                 </div>
-                                <div class="form-group"><label class="text-dark" for="inputMessage">Message</label><textarea class="form-control py-3" id="inputMessage" type="text" placeholder="Enter your message..." rows="4"></textarea></div>
-                                <div class="text-center"><button class="btn btn-primary btn-marketing mt-4" type="submit">Submit Request</button></div>
+                                <div class="form-group"><label class="text-dark" for="inputMessage" name="Message">Message</label><textarea class="form-control py-3" id="inputMessage" type="text" placeholder="Enter your message..." rows="4" name="message"></textarea></div>
+                                <div class="text-center"><button class="btn btn-primary btn-marketing mt-4" type="submit">Submit</button></div>
                             </form>
                         </div>
                         <div class="svg-border-rounded text-dark">
@@ -119,7 +114,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-3">
-                                <div class="footer-brand"><img src="assets/img/ThinkHalcyonLogo_White.svg" /><br /></div>
+                                <div class="footer-brand"><img src="assets/img/ThinkHalcyonLogo_White.svg" alt="Think Halcyon logo" /><br /></div>
                                 <div class="mb-3">Where beauty meets function</div>
                                 <div class="icon-list-social mb-5">
                                     <a class="icon-list-social-link" href="https://www.instagram.com/thinkhalcyonllc/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a><a class="icon-list-social-link" href="https://www.facebook.com/thinkhalcyonllc" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a><a class="icon-list-social-link" href="https://github.com/JonayahJ" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a><a class="icon-list-social-link" href="https://twitter.com/ThinkHalcyonLLC" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
@@ -176,5 +171,13 @@
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                disable: 'mobile',
+                duration: 600,
+                once: true
+            });
+        </script>
     </body>
 </html>
