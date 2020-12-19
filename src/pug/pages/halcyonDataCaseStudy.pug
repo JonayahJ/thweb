@@ -1,0 +1,145 @@
+extends ../layouts/default.pug
+
+block config
+
+    //- Global Page Configuration
+    - var pageTitle = 'Case Study'
+
+block content
+
+    //- * * * * * * * *
+    //- * * Navbar  * *
+    //- * * * * * * * *
+
+    include mixins/navbar.pug
+    +navbar({
+        navbarBg: 'bg-transparent',
+        navbarStyle: 'navbar-dark',
+        navbarBrandColor: 'text-white',
+        navbarBtnColor: 'btn-teal',
+        navbarContainer: 'container',
+        navbarPosition: 'fixed-top'
+    })
+
+    //- * * * * * * * * * *
+    //- * * Page Header * *
+    //- * * * * * * * * * *
+
+    include mixins/header.pug
+    +header({
+        pageHeaderBg: 'bg-img-cover py-15',
+        pageHeaderBgImg: 'background-image: url("assets/img/portfolio-images/Halcyon-Data_header.png")',
+        pageHeaderStyle: 'page-header-dark',
+        svgBorderAngled: false,
+        svgBorderRounded: true,
+        svgBorderWaves: false,
+        svgBorderFill: 'text-light'
+    })
+
+        .my-15.py-lg-10
+
+    //- * * * * * * * * * * * * * *
+    //- * * Case Study Content  * *
+    //- * * * * * * * * * * * * * *
+
+    include mixins/section.pug
+    +section({
+        sectionBg: 'bg-light',
+        sectionPadding: 'py-10',
+        svgBorderAngled: false,
+        svgBorderRounded: true,
+        svgBorderWaves: false,
+        svgBorderFill: 'text-dark'
+    })
+
+        .container
+            .row.justify-content-center
+                .col-lg-8
+                    h1 Halcyon Data
+                    p.lead 
+                    | An equity analysis consultancy started by yours truly  
+                    br
+                    | <b>Site Under Construction</b>
+                    br
+                    br
+                    //- a.btn.btn-teal.btn-marketing.rounded-pill.lift.lift-sm(href="#!" target="_blank" rel="noopener noreferrer") Live Preview
+                    //- | &nbsp;
+                    a.btn.btn-outline-dark.btn-marketing.rounded-pill(href="https://github.com/JonayahJ/halcyon-data" target="_blank" rel="noopener noreferrer") Github Repo
+                    hr
+                    p In another life, I found myself doing education policy research which led to equity data analysis work.  I needed a website to help promote my consultancy and provide clarity on what I was and was not offering to potential clients in this fledgling business endeavor of mine.
+                
+                //- Main Image
+                .col-lg-10
+                    img.img-fluid.rounded-lg.shadow.my-5(src='assets/img/portfolio-images/HD/HD_outsource.png')
+                
+                //- Second Section
+                .col-lg-8
+                    h4 Meeting the Needs for Halcyon Data's Launch
+                    p From our the equity analysis work that I have done over the course of Fall 2020, I knew that I needed a website that clearly displayed my services, what comes with those services, package rates, and a way to contact me if they were in need of a data consultant.
+                    p The website that I had in mind had several must have features, as well as some added flare.  Halcyon Data needed: an eye-catching landing page, animations, listed features, listed packages, form integration, former clients and testimonials, and examples of previous data analysis projects.
+                    p.pb-5 This project is currently underconstruction, am I am making major progress everytime I work on this website.  The full website is slated to launch in January 2021.
+                .col-lg-10
+                    .card-columns.card-columns-case-study.mb-5
+                        img.img-fluid.rounded-lg.shadow.my-5(src='assets/img/portfolio-images/HD/HD_features.png')
+                        
+                        br
+                        
+                        img.img-fluid.rounded-lg.shadow.my-5(src='assets/img/portfolio-images/HD/HD_packages.png')
+                        //- .card
+                        //-     img.img-fluid.rounded-lg(src='assets/img/portfolio-images/EA/EA-item.jpg')
+                        //- .card
+                        //-     img.img-fluid.rounded-lg(src='assets/img/portfolio-images/EA/Herbal-Consultations-Thumbnail.jpg')
+                        //- .card
+                        //-     img.img-fluid.rounded-lg(src='assets/img/portfolio-images/EA/Benefits-of-Qi-Gong-Thumbnail.jpg')
+                        //- .card
+                        //-     img.img-fluid.rounded-lg(src='assets/img/portfolio-images/EA/Earthworks-50.jpg')
+                
+                //- Testimonial
+                //- .col-lg-8
+                //-     .card.bg-primary-soft.text-primary.text-center.mb-5
+                //-         .card-body
+                //-             p.card-text.lead "I LOVE the new website! Jo really heard my vision and made it happen and then went above and beyond!"
+                    
+                    //- Third Section
+                    h4 Benchmarks &amp; Performance Metrics
+                    p After our planning meetings and the finalized content, we had our marching orders for building Joy the website she's always wanted for Earthworks Acupuncture. With her wishes in mind, we decided to focus on five key areas for her website redesign:
+                
+                    ul.fa-ul
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            | A beautifully animated home page that utilizes SCSS instead of JavaScript to achieve its styling
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            | An educational blog that was easy to maintain and update
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            | Helpful community resource pages to share much needed health and wellness information  
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            | A central location to find all of her online content (social media, newsletters, YouTube videos)
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            | A beautiful representation of her work with the community
+                    p And I am on my way to finishing this website!
+                    hr.my-5
+
+                    br
+
+                    //- .text-center
+                    //-     a.btn.btn-transparent-dark.btn-marketing.rounded-pill(href='sqsPortfolio.html') Go Back
+
+
+
+
+block footer
+
+    include mixins/footer.pug
+    +footer({
+        footerBg: 'bg-dark',
+        footerStyle: 'footer-dark'
+    })
