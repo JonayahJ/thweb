@@ -1,0 +1,97 @@
+extends ../layouts/default.pug
+
+block config
+
+    //- Global Page Configuration
+    - var pageTitle = 'Blog Post'
+
+block content
+
+    //- * * * * * * * *
+    //- * * Navbar  * *
+    //- * * * * * * * *
+
+    include mixins/navbar.pug
+    +navbar({
+        navbarBg: 'bg-dark',
+        navbarStyle: 'navbar-dark',
+        navbarBrandColor: 'text-dark',
+        navbarBtnColor: 'btn-teal',
+        navbarContainer: 'container',
+        navbarPosition: ''
+    })
+
+    //- * * * * * * * * * * *
+    //- * * Blog Overview * *
+    //- * * * * * * * * * * *
+
+    include mixins/section.pug
+    +section({
+        sectionBg: 'bg-light',
+        sectionPadding: 'py-10',
+        svgBorderAngled: false,
+        svgBorderRounded: true,
+        svgBorderWaves: false,
+        svgBorderFill: 'text-dark'
+    })
+
+        .container
+            .row.justify-content-center
+                .col-lg-10.col-xl-8
+                    .single-post
+                        h1 Life After Bootcamp
+                        p.lead I completed a bootcamp at Columbia, so now what?  Hear how I'm doing after bootcamp and what my plans for the future are.
+                        .d-flex.align-items-center.justify-content-between.mb-5
+                            .single-post-meta.mr-4
+                                img.single-post-meta-img(src='assets/img/AuthorPic.jpg', alt='Jonayah Marie Jackson\'s headshot')
+                                .single-post-meta-details
+                                    .single-post-meta-details-name Jonayah M. Jackson
+                                    .single-post-meta-details-date November 1, 2020 &middot; 6 min read
+                            .single-post-meta-links
+                                a(href='https://twitter.com/intent/tweet?url=https://www.thinkhalcyon.com/afterBootcampBlogPost&text=')
+                                    i.fab.fa-twitter.fa-fw
+                                a(href='https://www.facebook.com/sharer/sharer.php?u=https://www.thinkhalcyon.com/afterBootcampBlogPost')
+                                    i.fab.fa-facebook-f.fa-fw
+                                //- a(href='#!')
+                                //-     i.fas.fa-bookmark.fa-fw
+                        img.img-fluid.mb-2(src="https://images.pexels.com/photos/871495/pexels-photo-871495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Black woman with glasses looking sideways")
+                        .small.text-gray-500.text-center Photo Credit: Pexels
+                        .single-post-text.my-5
+                            p So fair warning, this is kinda like a mini-memoir and update post.  Thanks in advance for reading!
+
+                            p 2020 has been a tough year all around for most people.  While I have been luckier than some, I've had some trials and tribulations of my own.  That being said, 2020 has been a year of major growth for me.  In January (so pre-COVID), I was mainly consumed by the need to do more, be better, earn more.  Two months later, I was concerned about my hours being significantly cut at work and what that would me for me and family.  My family life and obligations have never been cut and dry, but one thing that prevails above all else is that we rely on one another to get by.  If even one person doesn't pull their weight, the others are put at a disadvantage.  Staring 50% of my salary in the face for up until the end of the summer was not... ideal to say the least.  So against all of my better judgement and life experiences telling me to be risk-averse, I took a gigantic leap of faith.
+
+                            p Most of you don't know this, but I'm a big gamer.  I have played video games since elementary school on every modern console and PC/Mac.  The reason I bring that up is because I have always been interested in programming, technology, design, and creating new and exciting things for people to experience.  After all, video games are largely made with code.  My off- and on-again love affair with all things tech and geek started at a young age.  I mean, I took apart and put back together my grandmother's VCR when I was 8 for the fun of it.  I was intrigued by what it was and wanted to know how it worked.  And then an unspecified amount of time later, I start building custom PCs and such.  Tech has always been a part of who I am and it took the crazy whirlwind of 2020 for me to accept that.
+                            
+                            p Why is this at all relevant?  Well, it wasn't until being faced with needing a higher paying job all of a sudden to make me really consider planting both feet this time into development and programming.  Since college, I have made dozens of sites on website builders like WordPress, Squarespace, Wix, GoDaddy, etc but I was never satified.  What I was doing wasn't really programming.  I did learn a lot of HTML and CSS, but I wanted more.  So instead of getting a new FT or even PT job this year, I decided to use my savings (like all of my savings - and yes it hurt so much) to enroll in a FT coding bootcamp at Columbia.  Now, I could've taken courses on Computer Science or Software Engineering in college (and I did, but hated it).  Though it would have saved me headaches and nightmares of inadequacy now, but that's not the path I chose.  I chose the hard way and enrolled in a 3.5-month bootcamp to help put me on a path toward the one life skill I always have my Sims learn, programming.
+
+                            img.img-fluid.mb-2(src='https://images.pexels.com/photos/1181359/pexels-photo-1181359.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', alt="Black woman coding on a laptop with a Python textbook next to her")
+                            .small.text-gray-500.text-center Photo Credit: Pexels
+
+                            h4 Learning programming is difficult, but so rewarding
+
+                            p From late June until mid September 2020, I literally did nothing but code, sleep, shower, eat, do side projects to pay the bills, and then code some more.  It was grueling.  Everyday from when I wokke up to when I forced myself to go to sleep, I felt like an idiot but was ultimately astonished at how much I was learning.  I started learning languages and programs new to me like JavaScript, Node, MongoDB, React, Express, etc.  And it opened my eyes to everything that I was looking for.  For those couple of months, I learned and was exposed to more programming than in all the years that I had been making websites since college.  This process wasn't easy and I am by far not finished (one's education is never "finished"), but I am glad that I took this very expensive leap of faith.
+
+                            br
+                            
+
+                            img.img-fluid.mb-2(src='https://images.pexels.com/photos/1181243/pexels-photo-1181243.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', alt="Black woman coding on a laptop")
+                            .small.text-gray-500.text-center Photo Credit: Pexels
+
+                            h4 Okay.  One long-winded, semi-incomplete story later, what are you doing now?
+
+                            p So right now, I am still studying more languages and techniques (C++, C#, R, Python, algorithms, etc) while I  hone my programming skills.  What that means for me and Think Halcyon moving forward is that I am going to spend the majority of my time developing websites and applications that I can be proud of and say were completely custom-made for my clients (and you can see some select projects on my portfolio site <a href="https://www.jonayah.dev" target="_blank" rel="noopener noreferrer")>jonayah.dev</a>).  In other words, Think Halcyon will focus more on custom developed and hosted sites and applications in the future than on sites made using website builders.  While I am creating more custom code for my amazing clients, I will continue learning, continue on my growth trajectory, and create better experiences for everyone.  
+
+                            p And who knows?  Maybe I might pickup game development as a hobby (cough cough very distinct possibility)... Just saying.
+
+                            hr.my-5
+
+                            .text-center
+                                a.btn.btn-transparent-dark.btn-marketing.rounded-pill(href="blog.html") Back to Blog Overview
+block footer
+
+    include mixins/footer.pug
+    +footer({
+        footerBg: 'bg-dark',
+        footerStyle: 'footer-dark'
+    })
