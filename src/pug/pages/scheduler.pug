@@ -13,12 +13,12 @@ block content
 
     include mixins/navbar.pug
     +navbar({
-        navbarBg: 'bg-white',
-        navbarStyle: 'navbar-light',
-        navbarBrandColor: 'text-dark',
+        navbarBg: 'bg-transparent',
+        navbarStyle: 'navbar-dark',
+        navbarBrandColor: 'text-white',
         navbarBtnColor: 'btn-teal',
         navbarContainer: 'container',
-        navbarPosition: ''
+        navbarPosition: 'fixed-top'
     })
 
     //- * * * * * * * * * *
@@ -32,7 +32,7 @@ block content
         svgBorderAngled: false,
         svgBorderRounded: true,
         svgBorderWaves: false,
-        svgBorderFill: 'text-white'
+        svgBorderFill: 'text-light'
     })
 
         .page-header-content
@@ -48,7 +48,7 @@ block content
 
     include mixins/section.pug
     +section({
-        sectionBg: 'bg-white',
+        sectionBg: 'bg-light',
         sectionPadding: 'py-10',
         svgBorderAngled: false,
         svgBorderRounded: true,
