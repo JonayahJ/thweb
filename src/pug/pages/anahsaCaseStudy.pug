@@ -13,12 +13,12 @@ block content
 
     include mixins/navbar.pug
     +navbar({
-        navbarBg: 'bg-white',
-        navbarStyle: 'navbar-light',
-        navbarBrandColor: 'text-primary',
-        navbarBtnColor: 'btn-primary',
+        navbarBg: 'bg-transparent',
+        navbarStyle: 'navbar-dark',
+        navbarBrandColor: 'text-white',
+        navbarBtnColor: 'btn-teal',
         navbarContainer: 'container',
-        navbarPosition: ''
+        navbarPosition: 'fixed-top'
     })
 
     //- * * * * * * * * * *
@@ -28,7 +28,7 @@ block content
     include mixins/header.pug
     +header({
         pageHeaderBg: 'bg-img-cover py-15',
-        pageHeaderBgImg: 'background-image: url("https://source.unsplash.com/RKwaj2g6OOU/1500x900")',
+        pageHeaderBgImg: 'background-image: url("assets/img/screenshots/AnahsaScreenshot.png")',
         pageHeaderStyle: 'page-header-dark',
         svgBorderAngled: false,
         svgBorderRounded: true,
@@ -55,57 +55,75 @@ block content
         .container
             .row.justify-content-center
                 .col-lg-8
-                    h1 Curology
-                    p.lead A case study focused on building brand standards and creating effective advertising campaigns
+                    h1 Anahsa, LLC
+                    p.lead Educational consulting at the intersection of theory, policy, and practice
+                    a.btn.btn-teal.btn-marketing.rounded-pill.lift.lift-sm(href="https://www.anahsa.com" target="_blank" rel="noopener noreferrer") Live Preview
                     hr
-                    p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti quis voluptas amet accusamus temporibus corporis quia asperiores magni laudantium dolore iusto, adipisci rem id ratione repellat! Fuga esse molestias accusamus!
-                    p.mb-0 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet error pariatur voluptatibus consequuntur natus unde porro, soluta quisquam facere, deserunt repellat iusto odit labore doloremque velit qui mollitia quo numquam.
+                    p Founder and CEO, Takiema Bunche Smith, was in need a website redesign for her educational advocacy and consultancy business that left a lasting impression on her clients and the communities that she serves. Takiema needed a website to display her services, blog posts, and publications; a calendar for her events; and an advertising machine for her videos, keynotes, interviews, and resources; and a place to highlight her many endeavors, like Humanity First, Opt-Out Advocacy, and Stillbirth Support.  We worked hand in hand with Takiema to meet her needs and create a beautiful, yet functional website that she could be proud to show her friends, family, and clients.
+                
+                //- Main Image
                 .col-lg-10
-                    img.img-fluid.rounded-lg.shadow.my-5(src='https://source.unsplash.com/DGH1u80sZik/1200x900')
+                    img.img-fluid.rounded-lg.shadow.my-5(src='assets/img/portfolio-images/Anahsa/AboutTBS.png' alt="Thumbnail for the About Takiema snippet on the Anahsa, LLC homepage")
+                
+                //- Second Section
                 .col-lg-8
-                    h4 Building Brand Awareness
-                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit a, iusto ratione minus labore illum sequi optio recusandae perferendis, et beatae corrupti! Nemo aut inventore maxime eligendi optio cupiditate et.
-                    p.pb-5 Lorem ipsum dolor sit amet consectetur adipisicing elit. A eius cupiditate similique officia aperiam adipisci reprehenderit veniam voluptate eum fugit voluptatem, aspernatur minus dolorum nemo impedit odit sit odio consectetur!
+                    h4 Meeting Takiema's Needs
+                    p A couple of years ago, we created the first Anahsa website.  However, it was a bit out of date and needed a facelift. Looking to try something new and easily accesible for her to make changes, we decided to update her website to the most current Squarespace version (7.1) and create a new visually pleasing website that retained the same functionality as the old website.
+                    p.pb-5 The website that we had in mind had several must-have features, as well as some added flare.  She needed: a blog, resources page, publications and press page with dropdown accordion, dedicated services pages, social media integration, dedicated page for her projects, calendar of all her events, newsletter subscription form, and photos from her latest photo shoot.
+
                 .col-lg-10
                     .card-columns.card-columns-case-study.mb-5
                         .card
-                            img.img-fluid.rounded-lg(src='https://source.unsplash.com/ZIihTgf5uGg/800x700')
+                            img.img-fluid.rounded-lg(src='assets/img/portfolio-images/Anahsa/HumanityFirst.png' alt="Humanity First Header")
                         .card
-                            img.img-fluid.rounded-lg(src='https://source.unsplash.com/Eu_jPNRNub8/800x900')
+                            img.img-fluid.rounded-lg(src='assets/img/portfolio-images/Anahsa/PastEvents.png' alt="Thumbnails of past calendar events")
                         .card
-                            img.img-fluid.rounded-lg(src='https://source.unsplash.com/VItxz6u036U/800x900')
+                            img.img-fluid.rounded-lg(src='assets/img/portfolio-images/Anahsa/HFslide.png' alt="Thumbnail of HF Presentation slide")
                         .card
-                            img.img-fluid.rounded-lg(src='https://source.unsplash.com/E_dRKdBhxk4/800x700')
+                            img.img-fluid.rounded-lg(src='assets/img/portfolio-images/Anahsa/Coaching.png' alt="Coaching header images")
+                        .card
+                            img.img-fluid.rounded-lg(src='assets/img/portfolio-images/Anahsa/RecentShoot.png' alt="Images of TBS from her recent photo shoots")
+                        .card
+                            img.img-fluid.rounded-lg(src='assets/img/portfolio-images/Anahsa/Accordion.png' alt="Example of dropdown accordion on website")
+                
+                //- Testimonial
                 .col-lg-8
-                    .card.bg-primary-soft.text-primary.text-center.mb-5
-                        .card-body
-                            p.card-text.lead "Working with this agency helped us boost sales and raise brand awareness across all of our product lines."
+                    //- .card.bg-primary-soft.text-primary.text-center.mb-5
+                    //-     .card-body
+                    //-         p.card-text.lead "I LOVE the new website! Jo really heard my vision and made it happen and then went above and beyond!"
+                    
+                    //- Third Section
                     h4 Benchmarks &amp; Performance Metrics
-                    p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa provident hic quaerat. Accusamus quidem quos fugit a aspernatur, magni obcaecati tenetur similique eaque, sequi id alias veritatis eius, maiores animi.
-                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. A neque ut reiciendis suscipit animi quaerat, est, repellat unde distinctio hic sapiente asperiores perspiciatis id! Quasi eveniet cupiditate quisquam. Itaque, esse.
-                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nobis odio modi optio sapiente neque saepe, facere culpa, doloribus voluptatem nemo quam, cumque fugiat qui excepturi. Nostrum, error. Impedit, quis!
+                    p After our planning meetings and the finalized content, we had our marching orders for building Takiema an updated website for Anahsa, LLC. With her wishes in mind, we focused on five key areas for her website redesign:
+                
                     ul.fa-ul
                         li.mb-3
                             span.fa-li
                             i.fas.fa-check.mr-2.text-green
-                            | Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            | An easily updatable calendar for her many events
                         li.mb-3
                             span.fa-li
                             i.fas.fa-check.mr-2.text-green
-                            | Quidem dicta iste maiores eligendi numquam nam voluptas quia nisi consequatur illo neque sunt error doloremque vel.
+                            | An blog that is easy to maintain and update
                         li.mb-3
                             span.fa-li
                             i.fas.fa-check.mr-2.text-green
-                            | Animi aliquam dolores suscipit saepe ratione corrupti veniam.
-                        li
+                            | Helpful dropdown resource and publication tabs to share information and peer-reviewed work  
+                        li.mb-3
                             span.fa-li
                             i.fas.fa-check.mr-2.text-green
-                            | Molestiae minima aliquam consequatur eius ab dignissimos at maxime odit culpa excepturi vero magnam vitae ipsa! Ducimus.
-
+                            | Dedicated pages for projects: Humanity First, Opt-Out Advocacy, and Stillbirth Support
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            | A platform to advertise latest work and Anahsa, LLC consultants
+                    
+                    p And we think it came out rather well!
+                    
                     hr.my-5
 
                     .text-center
-                        a.btn.btn-transparent-dark.btn-marketing.rounded-pill(href='#!') Go Back
+                        a.btn.btn-transparent-dark.btn-marketing.rounded-pill(href='sqsPortfolio.html') Go Back
 
 
 

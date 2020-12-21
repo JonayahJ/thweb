@@ -3,7 +3,7 @@ extends ../layouts/default.pug
 block config
 
     //- Global Page Configuration
-    - var pageTitle = 'Portfolio Grid'
+    - var pageTitle = 'Portfolio Large Grid'
 
 block content
 
@@ -39,7 +39,7 @@ block content
             .container.text-center
                 .row.justify-content-center
                     .col-lg-8
-                        h1.page-header-title.mb-3 Our work
+                        h1.page-header-title.mb-3 Squarespace Projects
                         p.page-header-text.mb-0 A showcase of Squarespace websites we've worked on in the past year
 
     //- * * * * * * * * *
@@ -49,51 +49,45 @@ block content
     include mixins/section.pug
     +section({
         sectionBg: 'bg-light',
-        sectionPadding: 'pb-10',
+        sectionPadding: 'py-10',
         svgBorderAngled: false,
         svgBorderRounded: false,
         svgBorderWaves: false,
         svgBorderFill: ''
     })
 
-        .container
+        .container-fluid
             .row
                 //- Anahsa
-                .col-md-6.col-xl-4.mb-5.mt-n5 
+                .col-md-6.mb-5
                     a.card.card-portfolio.h-100(href='anahsaCaseStudy.html')
                         img.card-img-top(src='assets/img/screenshots/AnahsaScreenshot.png', alt='Anahsa, LLC Homepage Screenshot')
                         .card-body
                             .card-title Anahsa, LLC
                 //- Kendra
-                .col-md-6.col-xl-4.mb-5.mt-md-n5
+                .col-md-6.mb-5
                     a.card.card-portfolio.h-100(href='kendraCaseStudy.html')
                         img.card-img-top(src='assets/img/screenshots/KSscreenshot.png', alt='Kendra Sims Homepage Screenshot')
                         .card-body
                             .card-title Kendra D. Sims
                 //- EA
-                .col-md-6.col-xl-4.mb-5.mt-xl-n5
+                .col-md-6.mb-5
                     a.card.card-portfolio.h-100(href='eaCaseStudy.html')
                         img.card-img-top(src='assets/img/screenshots/EAscreenshot.png', alt='Earthworks Acupuncture Homepage Screenshot')
                         .card-body
                             .card-title Earthworks Acupuncture
-                //- Yego Coffee
-                .col-md-6.col-xl-4.mb-5
-                    a.card.card-portfolio.h-100(href='yegoCoffeeCaseStudy.html')
-                        img.card-img-top(src='assets/img/screenshots/YCscreenshot.png', alt='Yego Coffee Homepage Screenshot')
-                        .card-body
-                            .card-title Yego Coffee
                 //- Impexcor Coffee
-                .col-md-6.col-xl-4.mb-5
+                .col-md-6.mb-5
                     a.card.card-portfolio.h-100(href='impexcorCaseStudy.html')
                         img.card-img-top(src='assets/img/screenshots/ICscreenshot.png', alt='Impexcor Coffee Homepage Screenshot')
                         .card-body
                             .card-title Impexcor Coffee
                 //- Elliott Educational Services
-                //- .col-md-6.col-xl-4.mb-5
-                //-     a.card.card-portfolio.h-100(href='cHECaseStudy.html')
-                //-         img.card-img-top(src='assets/img/screenshots/EAscreenshot.png', alt='PLACEHOLDER!!!!!!')
-                //-         .card-body
-                //-             .card-title Elliott Educational Services
+                .col-md-6.mb-5
+                    a.card.card-portfolio.h-100(href='#!')
+                        img.card-img-top(src='assets/img/screenshots/EESscreenshot.png', alt='Elliott Educational Services')
+                        .card-body
+                            .card-title Coming Soon!
 
     //- * * * * * * * * * * * * * * * *
     //- * * Contact Button Section  * *
