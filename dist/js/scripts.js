@@ -1,6 +1,6 @@
 /*!
     * Start Bootstrap - Think Halcyon v1.0.2 (https://thinkhalcyon.com/)
-    * Copyright 2013-2020 Jonayah Marie Jackson (http://jonayah.dev/)
+    * Copyright 2013-2021 Jonayah Marie Jackson (http://jonayah.dev/)
     * Licensed under SEE_LICENSE (https://github.com/JonayahJ/think-halcyon)
     */
     (function($) {
